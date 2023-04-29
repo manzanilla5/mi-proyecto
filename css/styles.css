@@ -4,6 +4,10 @@
 /* Importar aquí la font */
   @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Red+Hat+Display&display=swap');
 
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+*  cuyos valores asigna por defecto el navegador.
+*/
+
 h1 {
     font-family: 'Lato', sans-serif;
     font-family: 'Red Hat Display', sans-serif;
@@ -21,44 +25,14 @@ h2 {
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 700;
 }
-/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
-*  cuyos valores asigna por defecto el navegador.
-*/
 
 /* Reset */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     /* Para que el scrolleo en la one page sea suave */
     scroll-behavior: smooth;
-
-    flex-direction: row; /*Lo agrego. Estoy probando*/
-    justify-content: center; /*esto lo agregué yo, estoy probando, pero no modifica nada*/
-    aligne-items: center; /*sigo proband, no pasa nada*/
 }
-
-.bg-celeste {
-    background-color: #e0ffff;
-}
-
-.bg-lila {
-    background-color: #e1cdf3;
-}
-
-.importante {
-    border: 1px solid #ff0000;
-    padding: 8px; 
-}
-
-section {
-    padding 40px 20px;
-}
-
-p {
-    margin: 10px 0px; 
-}
-
 
 /* Para quitar los puntos a los items de listas */
 ul {
@@ -98,6 +72,7 @@ main {
 */
 
 /*Estilos generales*/
+
 body {
     font-family: 'Lato', sans-serif;
     background-color: #fbfbfb;
@@ -108,10 +83,11 @@ body {
 h1 {
     font-size: 36px;
     text-align: center;
-    margin-bottom: 20px;
+    padding: 16px; 
 }
 h2 {
     font-size: 28px;
+    text-align: center;
 }
 p {
     margin: 20px 0px;
@@ -130,16 +106,14 @@ header {
     width: 100%;
     padding: 16px;
     background-color: #fbfbfb;
-    box-shadow: 0 3px 10px -5px; #5f5f5f;
+    box-shadow: 0 3px 10px -5px #5f5f5f;
 
     position: fixed;
     top: 0;
     left: 0;
-
 }
-
 .logo {
-    width: 120px;
+    width: 80px;
 }
 .menu {
     display: flex;
@@ -159,7 +133,7 @@ section {
     align-items: center;
     padding: 16px;
     min-height: 100vh;
-    padding-top: 120px;
+    padding-top: 240px;
 }
 #inicio {
     justify-content: space-around;
@@ -168,16 +142,51 @@ section {
     margin-bottom: 20px;
 }
 .presentacion-img img {
-    width: 400px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50px;
+    border: 2px solid #af599e;
 }
 .presentacion {
     width: 100px;
     text-align: center;
 }
 .btn-cv {
-    background-color: #79f3aa;
+    background-color: #af599e;
     padding: 12px 20px;
     border-radius: 50px;
     font-size: 20px;
     display: inline-block;
 }
+
+#contacto {
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.conoceme {
+    background-color: rgba(175, 89, 158, 0.3);
+    width: 100%;
+    text-align: center;
+    padding: 20px 5px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.iconos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+}
+.iconos li {
+    padding: 30px;
+}
+
+/*Footer*/
+
+.copyright {
+    background-color: #af599e;
+    padding: 20px 0px;
+    text-align: center;
+}   
